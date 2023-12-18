@@ -1,222 +1,379 @@
-body.homepage{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body.homepage {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(165deg, #300a5a 55%, #7c1ec9);
+    background-image: url("images/homepagebackground2.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 110vh;
-    
+
 }
 
-h1{
+header h1 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 20%;
     color: white;
-    margin-top: 50px;
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 40%;
+    margin-top: 3%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 3px solid white;
+    padding: .3em;
+
 }
 
-main.homepage p{
-    color: white;
-    font-size: 20px;
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 1%;
+    margin-left: .6%;
+    position: fixed;
+
 }
 
-main.homepage{
+nav ul {
+    display: flex;
+    flex-direction: row;
+
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    margin: .2em;
+
+}
+
+nav a img {
+    border-radius: 7%;
+    border: 2px solid black;
+    width: 60px;
+    height: 60px;
+
+}
+
+nav a img:hover {
+    border: solid whitesmoke;
+
+}
+
+main.homepage {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 5%;
 
-}  
-
-.intro{
-    margin-top: -1%;
-    text-align: center;
 }
 
-
-main.homepage a{
+main.homepage a {
     color: white;
     text-decoration: none;
+
 }
 
-footer.homepage{
+.intro {
+    font-size: 20px;
+    margin-top: -1%;
+    text-align: center;
+    width: 35%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: 3px solid white;
+    position: relative;
+    padding: .5em;
+
+}
+
+.covers {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4%;
+
+}
+
+.covers img {
+    border-radius: 7%;
+    border: 3px solid black;
+    width: 300px;
+    height: 300px;
+
+}
+
+.covers div {
+    margin: 20px;
+    text-align: center;
+    transition: all 350ms ease;
+
+}
+
+.covers div img:hover {
+    border: solid whitesmoke;
+
+}
+
+
+.covers div:hover {
+    transform: scale(1.2);
+
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    margin-left: 25%;
+    width: 50%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: 3px solid white;
+    position: absolute;
+    padding: 20px;
+    gap: 3em;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+
+}
+
+footer {
     display: flex;
     flex-direction: column;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
     color: white;
-    margin-top: 5%;
-    margin-left: 2%;
-    
+    margin-top: 10%;
+    padding: 1em;
+    gap: 2em;
+
 }
 
-footer.homepage h2{
+footer h2 {
     text-decoration: underline;
+
 }
 
-footer.homepage a{
+footer ul {
+    list-style-type: none;
+}
+
+footer a {
     text-decoration: none;
     transition: all;
 
 }
 
-footer.homepage a:hover{
+footer a:hover {
     text-decoration: underline;
+
 }
 
-footer.homepage a{
+footer a {
     color: white;
+
 }
 
-.covers{
+.bron {
     display: flex;
     flex-direction: row;
-    margin-top: 4%;
-    
+    gap: 2em;
 }
 
-.covers img{
-    border-radius: 7%;
-    border: 3px solid black;
-    
-}
-
-.covers div{
-    margin: 20px;
-    text-align: center;
-    transition: all 350ms;
-    
-}
-
-.covers div img:hover{
-    border: solid whitesmoke;
-}
-
-
-.covers div:hover{
-    transform: scale(1.2);
-
-}
 
 /*Hier begint Red Dead Redemtption CSS*/
 
-body.RDR2{
+body.RDR2 {
     display: flex;
     flex-direction: column;
     background-image: url("images/RDR2background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 110vh;
 
 }
 
-header.RDR2 {
+.RDR2banner {
     display: flex;
     flex-direction: row;
     justify-content: center;
+
 }
 
-main.RDR2{
+.RDR2banner img {
+    width: 900px;
+    height: 300px;
+
+}
+
+.RDR2tekst {
     display: flex;
     flex-direction: column;
-    
+    gap: 1.5em;
+
 }
 
-main.RDR2 article{
+.RDR2rating {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 5%;
-    margin-left: 15%;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    border: 3px solid white;
-    position: absolute;
-    padding: 20px;
-    text-align: center;
-    font-family: 'Chinese Rocks Rg', sans-serif;
-    
+    flex-direction: column;
+    gap: 2em;
+
 }
 
-@import url('https://fonts.cdnfonts.com/css/chinese-rocks');
+.RDR2rating li {
+    list-style-type: none;
+    font-size: x-large;
+    margin-bottom: .5em;
+
+}
+
+.RDR2rating img {
+    border: 2px solid rgb(223, 211, 211);
+    width: 300px;
+    height: 168px;
+
+}
+
 
 /*Hier begint Spider-Man 2 CSS*/
 
-body.SM2{
+body.SM2 {
     display: flex;
     flex-direction: column;
     background-image: url("images/SM2Background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 110vh;
+    background-attachment: fixed;
+    height: 115vh;
+
 }
 
-header.SM2{
+.SM2banner {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 1.5%;
+
 }
 
-main.SM2{
+.SM2banner img {
+    width: 600px;
+    height: 190px;
+
+}
+
+.SMcontent {
     display: flex;
     flex-direction: column;
-}
-
-main.SM2 article{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 5%;
-    margin-left: 15%;
+    margin-left: 25%;
+    margin-top: 2%;
+    width: 50%;
     background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(119, 2, 2, 0.9);
     color: white;
     border: 3px solid white;
-    position: absolute;
-    padding: 20px;
-    text-align: center;
-    
+    position: relative;
+    padding: 15px;
+    gap: 4em;
+
+}
+
+.SM2tekst {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.SM2rating {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+
+}
+
+.SM2rating li {
+    list-style-type: none;
+    font-size: x-large;
+    margin-bottom: .5em;
+
+}
+
+.SM2rating img {
+    border: 2px solid rgb(223, 211, 211);
+    width: 300px;
+    height: 168px;
 }
 
 /*Hier begint The Last Of Us Part Two CSS*/
 
-body.TLOU2{
+body.TLOU2 {
     display: flex;
     flex-direction: column;
     background-image: url("images/TLOUbackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 110vh;
+
 }
 
-header.TLOU2{
+.TLOU2banner {
     display: flex;
     flex-direction: row;
     justify-content: center;
+
 }
 
-header.TLOU2 img{
-    margin-top:-2%;
+.TLOU2banner img {
+    width: 700px;
+    height: 450px;
+    margin-top: -5%;
+
 }
 
-main.TLOU2{
+main.TLOU2 {
     display: flex;
     flex-direction: column;
+
 }
 
-main.TLOU2 article{
+.TLOU2tekst {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: -2%;
-    margin-left: 15%;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    border: 3px solid white;
-    position: absolute;
-    padding: 20px;
-    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+
 }
 
+.TLOUrating {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+
+}
+
+.TLOUrating li {
+    list-style-type: none;
+    font-size: x-large;
+    margin-bottom: .5em;
+
+}
+
+.TLOUrating img {
+    border: 2px solid rgb(223, 211, 211);
+    width: 350px;
+    height: 200px;
+
+}
