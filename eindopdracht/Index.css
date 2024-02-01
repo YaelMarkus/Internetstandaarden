@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body.homepage {
@@ -13,7 +12,6 @@ body.homepage {
     background-size: cover;
     background-attachment: fixed;
     height: 110vh;
-
 }
 
 header h1 {
@@ -25,11 +23,11 @@ header h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 40%;
     margin-top: 3%;
+    margin-bottom: 3%;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
     border: 3px solid white;
     padding: .3em;
-
 }
 
 nav {
@@ -39,13 +37,11 @@ nav {
     margin-top: 1%;
     margin-left: .6%;
     position: fixed;
-
 }
 
 nav ul {
     display: flex;
     flex-direction: row;
-
 }
 
 nav ul li {
@@ -55,7 +51,6 @@ nav ul li {
 nav a {
     text-decoration: none;
     margin: .2em;
-
 }
 
 nav a img {
@@ -63,26 +58,21 @@ nav a img {
     border: 2px solid black;
     width: 60px;
     height: 60px;
-
 }
 
 nav a img:hover {
     border: solid whitesmoke;
-
 }
 
-main.homepage {
+main {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 5%;
-
 }
 
 main.homepage a {
     color: white;
     text-decoration: none;
-
 }
 
 .intro {
@@ -96,14 +86,12 @@ main.homepage a {
     border: 3px solid white;
     position: relative;
     padding: .5em;
-
 }
 
 .covers {
     display: flex;
     flex-direction: row;
     margin-top: 4%;
-
 }
 
 .covers img {
@@ -111,41 +99,104 @@ main.homepage a {
     border: 3px solid black;
     width: 300px;
     height: 300px;
-
 }
 
 .covers div {
     margin: 20px;
     text-align: center;
     transition: all 350ms ease;
-
 }
 
 .covers div img:hover {
     border: solid whitesmoke;
-
 }
 
 
 .covers div:hover {
     transform: scale(1.2);
-
 }
 
 .content {
     display: flex;
-    flex-direction: row;
-    margin-left: 25%;
+    flex-direction: column;
+    margin-bottom: 3%;
     width: 50%;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
     border: 3px solid white;
-    position: absolute;
     padding: 20px;
     gap: 3em;
     font-family: 'Chinese Rocks Rg', sans-serif;
+}
 
+.rdr2content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3%;
+    width: 20%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: 3px solid white;
+    padding: 15px;
+    gap: 3em;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+}
+
+.rating {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: 3px solid white;
+    padding: 15px;
+    font-size: x-large;
+    margin-bottom: 3%;
+    font-family: 'Chinese Rocks Rg', sans-serif;
+}
+
+.rating h3 {
+    text-decoration: underline;
+    margin-bottom: 3%;
+}
+
+.rating ul {
+    list-style-type: none;
+}
+
+.foto {
+    border: solid white 3px;
+    margin-bottom: 3%;
+}
+
+.video {
+    border: solid white 3px;
+    margin-bottom: 3%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 3% 0;
+    gap: 10%;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20%;
+}
+
+.mening {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    border: 3px solid white;
+    width: 20%;
+    padding: 15px;
+    font-family: 'Chinese Rocks Rg', sans-serif;
 }
 
 footer {
@@ -157,12 +208,10 @@ footer {
     margin-top: 10%;
     padding: 1em;
     gap: 2em;
-
 }
 
 footer h2 {
     text-decoration: underline;
-
 }
 
 footer ul {
@@ -172,17 +221,14 @@ footer ul {
 footer a {
     text-decoration: none;
     transition: all;
-
 }
 
 footer a:hover {
     text-decoration: underline;
-
 }
 
 footer a {
     color: white;
-
 }
 
 .bron {
@@ -202,48 +248,42 @@ body.RDR2 {
     background-size: cover;
     background-attachment: fixed;
     height: 110vh;
-
 }
 
 .RDR2banner {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
 }
 
 .RDR2banner img {
     width: 900px;
     height: 300px;
-
+    margin-bottom: 3%;
 }
 
 .RDR2tekst {
     display: flex;
     flex-direction: column;
     gap: 1.5em;
-
 }
 
 .RDR2rating {
     display: flex;
     flex-direction: column;
     gap: 2em;
-
 }
 
 .RDR2rating li {
     list-style-type: none;
     font-size: x-large;
     margin-bottom: .5em;
-
 }
 
 .RDR2rating img {
     border: 2px solid rgb(223, 211, 211);
     width: 300px;
     height: 168px;
-
 }
 
 
@@ -257,7 +297,6 @@ body.SM2 {
     background-size: cover;
     background-attachment: fixed;
     height: 115vh;
-
 }
 
 .SM2banner {
@@ -265,21 +304,20 @@ body.SM2 {
     flex-direction: row;
     justify-content: center;
     margin-top: 1.5%;
-
 }
 
 .SM2banner img {
     width: 600px;
     height: 190px;
-
+    margin-bottom: 3%;
 }
 
 .SMcontent {
     display: flex;
     flex-direction: column;
-    margin-left: 25%;
     margin-top: 2%;
-    width: 50%;
+    margin-bottom: 3%;
+    width: 40%;
     background-color: rgb(0, 0, 0);
     background-color: rgba(119, 2, 2, 0.9);
     color: white;
@@ -287,28 +325,25 @@ body.SM2 {
     position: relative;
     padding: 15px;
     gap: 4em;
-
 }
 
 .SM2tekst {
     display: flex;
     flex-direction: column;
     gap: 20px;
-
 }
 
 .SM2rating {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     gap: 2em;
-
 }
 
 .SM2rating li {
     list-style-type: none;
     font-size: x-large;
     margin-bottom: .5em;
-
 }
 
 .SM2rating img {
@@ -327,53 +362,34 @@ body.TLOU2 {
     background-size: cover;
     background-attachment: fixed;
     height: 110vh;
-
 }
 
 .TLOU2banner {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
 }
 
 .TLOU2banner img {
     width: 700px;
     height: 450px;
-    margin-top: -5%;
-
-}
-
-main.TLOU2 {
-    display: flex;
-    flex-direction: column;
-
+    margin-top: -3%;
 }
 
 .TLOU2tekst {
     display: flex;
     flex-direction: column;
     gap: 20px;
-
 }
 
 .TLOUrating {
     display: flex;
     flex-direction: column;
     gap: 2em;
-
 }
 
 .TLOUrating li {
     list-style-type: none;
     font-size: x-large;
     margin-bottom: .5em;
-
-}
-
-.TLOUrating img {
-    border: 2px solid rgb(223, 211, 211);
-    width: 350px;
-    height: 200px;
-
 }
